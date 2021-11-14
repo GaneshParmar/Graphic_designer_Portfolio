@@ -9,6 +9,12 @@
 /* #Contact{
     display: none;
 } */
+.sp{
+    color: blueviolet;
+}
+
+
+
 body{
     /* background: rgb(216, 216, 216); */
     position: absolute;
@@ -96,7 +102,7 @@ nav{
 }
 #About>#about_p2>.client_pic{
     /* background-color: blue; */
-    background: url(/my_photo.png) no-repeat center;
+    background: url("/my_photo.png") no-repeat center;
     background-size: contain;
     width: 70%;
     height: 70%;
@@ -247,11 +253,13 @@ nav{
     width: 200px;
 }
 .my_bio>h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 560;
 }
 .my_bio>p{
     font-size: 0.8em;
     text-align: center;
+    color: gray;
 }
 .my_bio>.my_skill{
     width: 110%;
