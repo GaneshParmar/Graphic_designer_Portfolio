@@ -1,0 +1,253 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #d2d3d66e;
+    /* background-color: #051120; */
+}
+
+.smnav{
+    z-index: 2;
+}
+
+.worknavwrap{
+    width: 80%;
+    height: fit-content;
+    overflow: hidden;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.worknav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border: 1px solid #d2d3d6;
+    border-bottom: none;
+    padding: 10px 40px;
+    background-color: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.1));
+    /* -webkit-mask-image: linear-gradient(to right,
+        from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+}
+
+.worknav::-webkit-scrollbar{
+    width: 200px;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.096);
+    margin: 0 10px;
+    padding: 0px 10px ;
+    border-radius: 20px;
+}
+
+.worknav::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+.worknav>ul{
+    width: fit-content;
+    display: flex;
+    
+}
+
+.worknav>ul>li{
+    display: block;
+    list-style: none;
+    width: 190px;
+}
+
+.worknav>ul>.active{
+    list-style-type: circle;
+}
+
+.worknav>ul>li>a{
+    color: rgba(128, 128, 128, 0.589);
+    text-decoration: none;
+}
+
+.worknav>ul>.active>a{
+    color: black;
+}
+
+
+/* Work div */
+.PortfolioWorks{
+    width: 90%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 10px auto 2px; 
+}
+
+
+.PortfolioWorks>.work_{
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    /* align-items: center; */
+    margin-top: 5px;
+    max-height: 600px;
+}
+
+.PortfolioWorks>.work_>img{
+    width: 100%;
+    margin: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+}
+
+/*  */
+
+
+footer{
+    text-align: center;
+    padding: 20px 0px;
+    height: 300px;
+    word-spacing: 10px;
+    background-color: #051120;
+    color: #fff;
+}
+
+footer>.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 40px auto;
+}
+footer>.links>.linkitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+footer>b{
+    color: #d2d3d6;
+}
+
+footer>p{
+    color: rgba(128, 128, 128, 0.432);
+    margin-top: 20px;
+}
+/*  */
+
+.hide{
+    display: none !important;
+}
+
+
+/* for tablets */
+@media (max-width:768px) and (min-height:799px) {
+    .worknavwrap{
+        width: 95%;
+    }
+    .worknav>ul>li{
+        width: 150px;
+        font-weight: 700;
+    }
+
+    .PortfolioWorks>.work_{
+        width: 300px;
+        max-height: 400px;
+    }
+
+    .PortfolioWorks>.sqr{
+        max-height: 400px;
+        aspect-ratio: 1/1;
+    }
+
+    .PortfolioWorks>.rec{
+        max-height: 300px;
+
+    }
+
+
+    .PortfolioWorks>.longrec{
+        max-height: 500px;
+    }
+
+    footer{
+        padding: 10px 0px;
+        height: 250px;
+        word-spacing: 3px;
+    }
+
+    footer>.links{
+        justify-content: space-between;
+        width: 65%;
+    }
+    footer>.links>.linkitem{
+        width: 50px;
+        height: 50px;
+    }
+    footer>b{
+        color: #d2d3d6;
+        font-size: 0.8em;
+    }
+
+
+}
+
+
+/* small mobile */
+@media (max-width:768px) and (min-height:500px) and (max-height:798px){
+    .worknavwrap{
+        width: 95%;
+    }
+    .worknav>ul>li{
+        width: 120px;
+    }
+
+    .PortfolioWorks>.work_{
+        max-height: 300px;
+    }
+
+    .PortfolioWorks>.sqr{
+        max-height: 300px;
+        aspect-ratio: 1/1;
+    }
+
+    .PortfolioWorks>.rec{
+        height: 200px;
+
+    }
+
+
+    .PortfolioWorks>.longrec{
+        max-height: 500px;
+    }
+
+    footer{
+        padding: 10px 0px;
+        height: 250px;
+        word-spacing: 3px;
+    }
+
+    footer>.links{
+        justify-content: space-between;
+        width: 65%;
+    }
+    footer>.links>.linkitem{
+        width: 50px;
+        height: 50px;
+    }
+    footer>b{
+        color: #d2d3d6;
+        font-size: 0.8em;
+    }
+    
+}
