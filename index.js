@@ -24,9 +24,36 @@
 
 const navToggle=document.querySelector('#navtoggle .hamburger_icon')
 const smnav=document.getElementsByClassName('smnav')[0]
-
+const closeContact=document.querySelector('#close')
+const contactF=document.querySelector('#contactForm')
+const contactBtn=document.querySelector('#contactBtn')
+const contactWrap=document.getElementsByClassName('contactWrap')[0]
+const sm_nav=document.getElementById('sm_nav')
 
 navToggle.addEventListener('click',()=>{
   navToggle.classList.toggle('open')
   smnav.classList.toggle('smnavh')
+  
 })
+
+closeContact.addEventListener('click',()=>{
+  contactWrap.style.display="none"
+  contactF.style.top="-100%"
+})
+
+contactBtn.addEventListener('click',()=>{
+  contactWrap.style.display="block"
+  contactF.style.top="0%"
+})
+
+// sm_nav.onfocusout=()=>{
+//   smnav.classList.toggle('smnavh')
+// }
+
+$(document).on("focusout","#sm_nav",function(){
+  if(navToggle.classList.contains('open')){
+    navToggle.classList.remove('open')
+    smnav.classList.toggle('smnavh')
+  }
+});
+

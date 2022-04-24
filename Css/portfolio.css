@@ -11,12 +11,29 @@ body{
     z-index: 2;
 }
 
+.myFav{
+    max-width: 900px;
+    width: 90%;
+    color: #fff;
+    margin: 5px auto;
+}
+
+.myFav>h3{
+    padding: 5px 0;
+    color: #051120;
+}
+
+.myFav>section{
+    height: fit-content !important;
+}
+
 .worknavwrap{
     width: 80%;
-    height: fit-content;
+    max-height: 300px;
     overflow: hidden;
     margin: 10px auto;
     border-radius: 20px;
+    border: 1px solid #051120;
 }
 
 .worknav{
@@ -34,7 +51,7 @@ body{
     background-color: #fff;
     overflow-x: auto;
     overflow-y: hidden;
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.1));
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.4));
     /* -webkit-mask-image: linear-gradient(to right,
         from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
 }
@@ -69,12 +86,13 @@ body{
 }
 
 .worknav>ul>li>a{
-    color: rgba(128, 128, 128, 0.589);
+    color: rgba(128, 128, 128, 0.774);
     text-decoration: none;
 }
 
 .worknav>ul>.active>a{
     color: black;
+    font-weight: 500;
 }
 
 
@@ -97,6 +115,8 @@ body{
     /* align-items: center; */
     margin-top: 5px;
     max-height: 600px;
+    opacity: 1;
+    transition: all 0.4s ease;
 }
 
 .PortfolioWorks>.work_>img{
@@ -147,6 +167,7 @@ footer>p{
 
 .hide{
     display: none !important;
+    opacity: 0 !important;
 }
 
 

@@ -6,6 +6,32 @@ const design_=document.getElementsByClassName('design');
 const logo_=document.getElementsByClassName('logo');
 const works=document.getElementsByClassName('work_');
 const list_=document.querySelectorAll("li")
+const loader=document.querySelector("#loader")
+
+// OwlCarosel
+$(document).ready(function() {
+  
+
+  $("#banner-area .owl-carousel").owlCarousel({
+      items:1,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true
+  });
+
+  var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '5px');
+dots.css('left', 'calc(50% - ' + dots.width()/2+'px)');
+
+$("#imgBtn").on('click',(e)=>{
+  $("#imgBtn").hide()
+  document.querySelector("#photoGallery").classList.toggle('show');
+})
+
+
+
+});
 
 
 // For toggling nav bar in small
@@ -22,6 +48,17 @@ navToggle.addEventListener('click',()=>{
 // 
 
 function showWork(e,cls) {
+
+  for (const child of works) {
+    child.classList.add('hide')
+  }
+  loader.classList.remove('hide')
+
+  setTimeout(() => {
+  loader.classList.add('hide')
+  for (const child of works) {
+    child.classList.add('hide')
+  }
   remClasses()
     if(cls!="work_"){
       let selectednav=document.querySelectorAll(cls)
@@ -41,6 +78,7 @@ function showWork(e,cls) {
           }
     }
     e.classList.add('active')
+  }, 500);
 }
 
 

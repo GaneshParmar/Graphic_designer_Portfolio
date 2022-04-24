@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUKESH</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;320;600;900&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;320;600;900&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="onepage-scroll\onepage-scroll.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="onepage-scroll\jquery.onepage-scroll.js"></script>
+
 </head>
+
 <body>
+
+
+    <div class="contactWrap" id="contactForm">
+        <div class="contactForm">
+            <div class="close" id="close">X</div>
+            <h1>Contact Me</h1>
+            <form action="https://formspree.io/f/mayvbgln" method="POST">
+                <label>
+                    <p>Your email</p>
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    <p>Your message</p>
+                    <textarea name="message" required></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
 
     <div class="main">
         <section>
@@ -26,7 +52,7 @@
                     <div class="navitem"><a href="./Portfolio.html">PORTFOLIO</a></div>
                 </div>
 
-                <div class="smnav bg_hide smnavh">
+                <div class="smnav bg_hide smnavh" id="sm_nav">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="./Portfolio.html">PORTFOLIO</a></li>
@@ -41,116 +67,200 @@
             </nav>
             <div class="maincontent">
                 <div class="wrapdata">
-                    
+
                     <div class="info">
                         <b class="salute">Hii,</b>
                         <b>I'm <span class="sp">MUKESH</span> PARMAR</b>
                         <b class="designation">Graphic Designer</b>
-        
-                        <button class="conatct_btn">CONTACT</button>
-                        
+
+                        <button class="conatct_btn" id="contactBtn">CONTACT</button>
+
                         <div class="links">
                             <div class="linkitem">
-                                <a href="#">
-                                    <img loading="lazy"  src="./Icons/linkedin.png" alt="" srcset="" width="22">
+                                <a href="https://www.linkedin.com/in/mukesh-parmar-7a9983220/">
+                                    <img loading="lazy" src="./Icons/linkedin.png" alt="" srcset="" width="22">
                                 </a>
                             </div>
-            
+
+                            <div class="linkitem">
+                                <a href="https://www.instagram.com/youtubebanner26/">
+                                    <img loading="lazy" src="./Icons/instagram.png" alt="" srcset="" width="22">
+                                </a>
+                            </div>
+
                             <div class="linkitem">
                                 <a href="#">
-                                    <img loading="lazy"  src="./Icons/instagram.png" alt="" srcset="" width="22">
+                                    <img loading="lazy" src="./Icons/google +.png" alt="" srcset="" width="22">
                                 </a>
-                            </div>   
-            
-                            <div class="linkitem">
-                                <a href="#">
-                                    <img loading="lazy"  src="./Icons/google +.png" alt="" srcset="" width="22">
-                                </a>
-                            </div>              
+                            </div>
                         </div>
                         <div class="scrollDown">
                             <p>Scroll Down</p>
-                            <img loading="lazy"  src="./Icons/scrolldownicon.png" alt="" srcset="" width="30">
+                            <img loading="lazy" src="./Icons/scrolldownicon.png" alt="" srcset="" width="30">
                         </div>
                     </div>
-        
+
                     <div class="profilepic smhide">
-                        <img loading="lazy"  src="./modal.png" alt="" srcset="" >
+                        <img loading="lazy" src="./modal.png" alt="" srcset="">
                     </div>
-        
+
                 </div>
             </div>
         </section>
-        <section class="sec sec2">
+        <section class="sec sec1">
             <div class="myworks">
                 <p>PORTFOLIO</p>
                 <h1>my works</h1>
                 <div class="works">
-                    <img loading="lazy"  src="./Works/book_cover_1.png" alt="" srcset="" width="320">
-                    <img loading="lazy"  src="./Works/book_cover_2.png" alt="" srcset="" width="320">
-                    <img loading="lazy" class="t_hide smimg" src="./Works/youtube_banner.png" alt="" srcset="" width="320">
-                    <img loading="lazy" class="t_hide smhide exsimg" src="./Works/row_2_img.png" alt="" srcset="" width="320">
-                    <img loading="lazy" class="t_hide smhide nhubim" src="./Works/book_cover_3.png" alt="" srcset="" width="320">
-                    <img loading="lazy" class="t_hide smhide nhubim" src="./Works/row_2_img_3.png" alt="" srcset="" width="320">
-                    <img loading="lazy" class="t_hide timg smhide twimg" src="./Works/website.png" alt="" srcset="" width="320">
+                    <img loading="lazy" src="./Works/book_cover_1.jpg" alt="" srcset="" width="320">
+                    <img loading="lazy" src="./Works/book_cover_2.jpg" alt="" srcset="" width="320">
+                    <img loading="lazy" class="t_hide smimg" src="./Works/youtube_banner.jpg" alt="" srcset=""
+                        width="320">
+                    <img loading="lazy" class="t_hide smhide exsimg" src="./Works/row_2_img.jpg" alt="" srcset=""
+                        width="320">
+                    <img loading="lazy" class="t_hide smhide nhubim" src="./Works/book_cover_3.jpg" alt="" srcset=""
+                        width="320">
+                    <img loading="lazy" class="t_hide smhide nhubim" src="./Works/row_2_img_3.jpg" alt="" srcset=""
+                        width="320">
+                    <img loading="lazy" class="t_hide timg smhide twimg" src="./Works/website.jpg" alt="" srcset=""
+                        width="320">
                     <!-- <img loading="lazy"  src="./Works/big_banner.png" alt="" srcset="" width="320"> -->
                 </div>
                 <button><a href="./Portfolio.html">View More+</a></button>
             </div>
         </section>
-        <section class="sec sec1">
-            About me
-        </section>
-        <section class="sec sec3" id="contact">
-            <h1>Contact Me</h1>
-            <div class="links">
-                <div class="linkitem">
-                    <a href="#">
-                        <img loading="lazy"  src="./Icons/linkedin.png" alt="" srcset="" width="30">
-                    </a>
+        <section class="sec sec2">
+            <div class="quote">
+                
+                <h2>
+                    <span>&quot;</span>
+                    Design is a solution to a problem;art is question
+                    to a problem.
+
+                    <span>&quot;</span>
+                </h2>
+                <p>
+                    --My Favorite Qoute
+                </p>
+            </div>
+            <div class="aboutMe">
+                <!-- <hr> -->
+                <h1>About Me</h1> 
+                <hr> 
+                <img src="./Images/imagePassport.jpeg" alt="mukeshparmar" srcset="" width="150">
+                <p>
+                    I am <span class="name_">Mukesh Parmar</span> a graphic designer and a video editor .
+                    Its been 3 Years in this field.
+                    My ultimate effort is make things which clients actually crave for.
+                    Focus in on providing value.
+                    I design a bunch of things such as
+                    Social Media post,Youtube Thumbnails, Chaneel arts ,
+                    Book covers,Posters , Product Baneers and tpons of other things.
+                    You can check out my portfolio here.
+                </p>
+                <div class="links">
+                    <div class="linkitem">
+                        <a href="https://www.linkedin.com/in/mukesh-parmar-7a9983220/">
+                            <img loading="lazy" src="./Icons/linkedin.png" alt="" srcset="" width="30">
+                        </a>
+                    </div>
+    
+                    <div class="linkitem">
+                        <a href="#">
+                            <img loading="lazy" src="./Icons/instagram.png" alt="" srcset="" width="30">
+                        </a>
+                    </div>
+    
+                    <div class="linkitem">
+                        <a href="#">
+                            <img loading="lazy" src="./Icons/google +.png" alt="" srcset="" width="30">
+                        </a>
+                    </div>
                 </div>
-
-                <div class="linkitem">
-                    <a href="#">
-                        <img loading="lazy"  src="./Icons/instagram.png" alt="" srcset="" width="30">
-                    </a>
-                </div>   
-
-                <div class="linkitem">
-                    <a href="#">
-                        <img loading="lazy"  src="./Icons/google +.png" alt="" srcset="" width="30">
-                    </a>
-                </div>              
             </div>
         </section>
+        <section class="sec sec3" id="contact">
+            <footer>
+                <h1>Get In Touch</h1>
+                <div class="links">
+                    <div class="linkitem">
+                        <a href="https://www.linkedin.com/in/mukesh-parmar-7a9983220/">
+                            <img loading="lazy" src="./Icons/linkedin.png" alt="" srcset="" width="22">
+                        </a>
+                    </div>
+        
+                    <div class="linkitem">
+                        <a href="https://www.instagram.com/youtubebanner26/">
+                            <img loading="lazy" src="./Icons/instagram.png" alt="" srcset="" width="22">
+                        </a>
+                    </div>
+                    
+                    <div class="linkitem">
+                        <a href="#">
+                            <img loading="lazy" src="./Icons/google +.png" alt="" srcset="" width="22">
+                        </a>
+                    </div>
+                </div>
+                <b>mukeshsingh30026@gmail.com</b>
+
+                <p class="f_link"> 
+                    <a href="#">Home | </a>
+                    <a href="./Portfolio.html">Portfolio</a>
+                </p>
+                <p class="cpyright">Copyright © Mukesh Parmar 2021-2022</p>
+            </footer>
+        </section>
     </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBxI9f8pRACjlVA-UYnlLdNOXKoB5egYmE",
+          authDomain: "mukesh-parmar.firebaseapp.com",
+          projectId: "mukesh-parmar",
+          storageBucket: "mukesh-parmar.appspot.com",
+          messagingSenderId: "995275543435",
+          appId: "1:995275543435:web:422edf9e8ab8afa20f958e",
+          measurementId: "G-LL7MV8KN1B"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 
+    <script src="index.js"></script>
+    <script>
+        $(".main").onepage_scroll({
+            sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+            easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+            // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+            animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+            pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+            updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+            beforeMove: function (index) { },  // This option accepts a callback function. The function will be called before the page moves.
+            afterMove: function (index) { },   // This option accepts a callback function. The function will be called after the page moves.
+            loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+            keyboard: true,                  // You can activate the keyboard controls
+            responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+            // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+            // the browser's width is less than 600, the fallback will kick in.
+            direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+        });
 
-   <script src="index.js"></script> 
-   <script>
-       $(".main").onepage_scroll({
-   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-   keyboard: true,                  // You can activate the keyboard controls
-   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-                                    // the browser's width is less than 600, the fallback will kick in.
-   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
-});
-
-   </script>
-   <script>
-    $(".contact_btn").click(function(){
-      console.log("hello")
-  });
-   </script>
+    </script>
+    <script>
+        $(".contact_btn").click(function () {
+            console.log("hello")
+        });
+    </script>
 </body>
 </body>
+
 </html>
